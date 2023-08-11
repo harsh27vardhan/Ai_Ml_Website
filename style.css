@@ -1,0 +1,150 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(62, 60, 60);
+}
+
+.upper {
+    /* border: 2px solid black; */
+    border-radius: 34px;
+    margin: 7px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #2e2aa8 45%, #6224d6 60%, #285aeb 90%);
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.logocontainer {
+    /* border: 2px solid black; */
+    display: inline;
+    float: left;
+    margin: 15px 20px;
+}
+
+.logocontainer img {
+    width: 400px;
+}
+
+.navigation {
+    display: block;
+    overflow: hidden;
+}
+
+#navbar {
+    display: flex;
+    float: right;
+}
+
+#navbar li {
+    font-family: 'Baloo Bhaina 2', 'Nunito', 'Overlock', 'Caveat', Georgia, 'Times New Roman', Times, serif;
+    list-style: none;
+    margin-top: 10px;
+    list-style: none;
+}
+
+#navbar li a {
+    display: inline-block;
+    margin: 7px 20px;
+    padding: 2px 20px;
+    font-size: 1.9rem;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transform: scale(0);
+}
+
+#navbar li a:hover::after {
+    transform: scale(1);
+}
+
+.imagecontainer {
+    border: 2px solid white;
+    display: inline-block;
+    margin: 15px 12px;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.347);
+    backdrop-filter: blur(20px);
+    font-size: 20px;
+}
+
+.section {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.section-items {
+    border: 2px solid white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.215);
+    font-size: 20px;
+}
+
+.section-items:hover {
+    position: relative;
+    bottom: 7px;
+    right: 7px;
+    box-shadow: 7px 7px white;
+    /* transition: 0.3s; */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-items {
+    margin: 30px;
+}
+.footer-items label {
+    font-size: 2rem;
+}
+.footer-items pre{
+    font-size: 1.2rem;
+}
+footer img{
+    width: 400px;
+}
+
+.gototop button {
+    background-color: grey;
+    margin: 15px;
+    padding: 20px 20px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 3rem;
+    border: 2px solid black;
+    outline: 3px solid green;
+    outline-offset: -7px;
+    transition: 0.2s;
+}
+
+.gototop button:hover {
+    cursor: pointer;
+    outline-offset: 3px;
+}
