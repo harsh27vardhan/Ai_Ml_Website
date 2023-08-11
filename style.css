@@ -5,7 +5,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(62, 60, 60);
+    background-color: rgb(23, 22, 22);
 }
 
 .upper {
@@ -27,12 +27,18 @@ body {
 }
 
 .logocontainer img {
-    width: 400px;
+    width: 100px;
 }
 
 .navigation {
     display: block;
     overflow: hidden;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 34px;
+    backdrop-filter: blur(40px);
+    z-index: 2;
 }
 
 #navbar {
@@ -72,8 +78,8 @@ body {
 .imagecontainer {
     border: 2px solid white;
     display: inline-block;
-    margin: 15px 12px;
-    margin: auto;
+    margin: 150px auto;
+    /* margin: auto; */
     width: 500px;
     height: 350px;
     border-radius: 30px;
@@ -99,14 +105,38 @@ body {
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.215);
     font-size: 20px;
-}
+    animation: change-background 5s ease-in-out infinite;
 
+}
+@keyframes change-background {
+  0% {
+    background: radial-gradient(circle at 30% 107%, #97b1fd 0%, #97b1fd 5%, #504beb 45%, #9668da 60%, #4c6fd7 90%);
+  }
+  25% {
+    background: radial-gradient(circle at 30% 107%, #97b1fd 0%, #97b1fd 5%, #504beb 45%, #a149e4 60%, #285aeb 90%);
+  }
+  50% {
+    background: radial-gradient(circle at 30% 107%, #97b1fd 0%, #97b1fd 5%, #504beb 45%, #a344ec 60%, #1e52ec 90%);
+  }
+  75% {
+    background: radial-gradient(circle at 30% 107%, #97b1fd 0%, #97b1fd 5%, #504beb 45%, #a149e4 60%, #285aeb 90%);
+  }
+  100% {
+    background: radial-gradient(circle at 30% 107%, #97b1fd 0%, #97b1fd 5%, #504beb 45%, #9668da 60%, #4c6fd7 90%);
+  }
+}
 .section-items:hover {
     position: relative;
     bottom: 7px;
     right: 7px;
     box-shadow: 7px 7px white;
     /* transition: 0.3s; */
+}
+
+.questions{
+    background: url('ai_bot_2\ 1.gif') no-repeat center center/cover;
+    height: 100vh;
+    border-radius: 34px;
 }
 
 footer {
@@ -132,7 +162,7 @@ footer img{
 .gototop button {
     background-color: grey;
     margin: 15px;
-    padding: 20px 20px;
+    padding: 0px 20px;
     border-radius: 100%;
     position: fixed;
     bottom: 15px;
@@ -147,4 +177,11 @@ footer img{
 .gototop button:hover {
     cursor: pointer;
     outline-offset: 3px;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(23, 22, 22);
+    color: white;
 }
