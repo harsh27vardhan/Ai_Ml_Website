@@ -1,0 +1,59 @@
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    width: 100%;
+}
+#navbar {
+    margin: 0px;
+}
+#navbar li a {
+    margin: 7px 10px;
+    padding: 0px 10px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+.logocontainer img{
+    display: block;
+    margin: auto;
+    width: 50px;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+}
+#navbar li a {
+    font-size: 1.2rem;
+}
+.intro-section{
+    font-size: 1rem;
+}
+.intro-section img{
+    width: 150px;
+}
+.section{
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer img{
+    width: 200px;
+}
+.footer-items {
+    margin: 15px;
+}
+.footer-items label {
+    font-size: 1.5rem;
+}
+.footer-items pre{
+    font-size: 1rem;
+}
+.copyright{
+    font-size: 1rem;
+}
