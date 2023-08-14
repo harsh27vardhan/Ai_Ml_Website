@@ -6,13 +6,14 @@ body {
     padding: 0;
     margin: 0;
     background-color: rgb(23, 22, 22);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #2e2aa8 45%, #6224d6 60%, #285aeb 90%);
 }
 
 .upper {
     /* border: 2px solid black; */
     border-radius: 34px;
     margin: 7px;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #2e2aa8 45%, #6224d6 60%, #285aeb 90%);
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #2e2aa8 45%, #6224d6 60%, #285aeb 90%); */
     /* height: 98vh; */
     display: flex;
     flex-direction: column;
@@ -38,7 +39,7 @@ body {
     /* border: 2px solid black; */
     display: inline;
     float: left;
-    margin: 20px 20px;
+    margin: 15px 40px;
 }
 .logocontainer img {
     width: 70px;
@@ -74,6 +75,9 @@ body {
 #navbar li a:hover::after {
     transform: scale(1);
 }
+.options{
+    display: none;
+}
 
 .intro-section {
     /* border: 2px solid white; */
@@ -86,7 +90,7 @@ body {
     border-radius: 30px;
     padding: 8px;
     background-color: rgba(0, 0, 0, 0.347);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     font-size: 1.5rem;
 }
 .intro-section img{
