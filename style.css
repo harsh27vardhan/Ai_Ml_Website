@@ -193,6 +193,7 @@ body {
     margin: auto;
     /* width: 100%; */
     max-width: 700px; 
+    padding: 10px;
 }
 .faq li{
     list-style: none;
