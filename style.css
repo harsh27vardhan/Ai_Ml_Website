@@ -13,55 +13,55 @@ body {
     border-radius: 34px;
     margin: 7px;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #2e2aa8 45%, #6224d6 60%, #285aeb 90%);
-    height: 98vh;
+    /* height: 98vh; */
     display: flex;
     flex-direction: column;
-    align-items: right;
-}
-
-.logocontainer {
-    /* border: 2px solid black; */
-    display: inline;
-    float: left;
-    margin: 15px 20px;
-}
-
-.logocontainer img {
-    width: 100px;
+    /* align-items: right; */
 }
 
 .navigation {
     display: block;
     overflow: hidden;
-    position: sticky;
-    top: 0px;
+    position: fixed;
+    top: 7px;
+    width: 100%;
+    /* margin: auto; */
+    /* margin-right: 7px; */
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 34px;
     backdrop-filter: blur(40px);
     z-index: 2;
 }
 
+.logocontainer {
+    /* border: 2px solid black; */
+    display: inline;
+    float: left;
+    margin: 20px 20px;
+}
+.logocontainer img {
+    width: 70px;
+}
+
 #navbar {
     display: flex;
     float: right;
+    margin: 5px 20px;
 }
-
 #navbar li {
     font-family: 'Baloo Bhaina 2', 'Nunito', 'Overlock', 'Caveat', Georgia, 'Times New Roman', Times, serif;
     list-style: none;
     margin-top: 10px;
     list-style: none;
 }
-
 #navbar li a {
     display: inline-block;
     margin: 7px 20px;
-    padding: 2px 20px;
+    padding: 0px 20px;
     font-size: 1.9rem;
     color: white;
     text-decoration: none;
 }
-
 #navbar li a::after {
     content: "";
     display: block;
@@ -70,24 +70,54 @@ body {
     background-color: white;
     transform: scale(0);
 }
-
 #navbar li a:hover::after {
     transform: scale(1);
 }
 
-.imagecontainer {
-    border: 2px solid white;
-    display: inline-block;
-    margin: 150px auto;
-    /* margin: auto; */
-    width: 500px;
-    height: 350px;
+.intro-section {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    margin-bottom: 50px;
+    width: 75%;
+    /* height: 350px; */
     border-radius: 30px;
     padding: 8px;
-    background-color: rgba(255, 255, 255, 0.347);
+    background-color: rgba(0, 0, 0, 0.347);
     backdrop-filter: blur(20px);
-    font-size: 20px;
+    font-size: 1.5rem;
 }
+.intro-section img{
+    width: 350px;
+    margin: 10px auto;
+}
+.intro{
+    margin: 35px;
+    /* color: white; */
+}
+.intro-section a{
+    text-decoration: none;
+    color: white;
+}
+.intro-section button{
+    display: inline-block;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    background-color: rgba(20, 20, 194, 0.3);
+    backdrop-filter: blur(20px);
+    border: 0px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.intro-section button:hover{
+    background-color: rgba(0, 0, 255, 0.3);
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+    box-shadow: 2px 2px 2px white;
+}
+
 
 .section {
     display: flex;
@@ -96,19 +126,33 @@ body {
     margin: 15px;
     padding: 5px;
     justify-content: center;
+    background: linear-gradient(132deg, #c3aa05, #b50eb5, #3f4dcd);
+    background-size: 400% 400%;
+    animation: Gradient 3s ease infinite;
+    position: relative;
 }
-
+@keyframes Gradient {
+    0% {
+      background-position:0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
 .section-items {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     margin: 15px;
     padding: 15px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.215);
+    background-color: rgba(255, 255, 255, 0.3);
     font-size: 20px;
-    animation: change-background 5s ease-in-out infinite;
-
+    /* backdrop-filter: blur(20px); */
 }
-@keyframes change-background {
+
+/* @keyframes change-background {
   0% {
     background: radial-gradient(circle at 30% 107%, #97b1fd 0%, #97b1fd 5%, #504beb 45%, #9668da 60%, #4c6fd7 90%);
   }
@@ -124,20 +168,76 @@ body {
   100% {
     background: radial-gradient(circle at 30% 107%, #97b1fd 0%, #97b1fd 5%, #504beb 45%, #9668da 60%, #4c6fd7 90%);
   }
-}
+} */
 .section-items:hover {
     position: relative;
     bottom: 7px;
     right: 7px;
-    box-shadow: 7px 7px white;
-    /* transition: 0.3s; */
+    box-shadow: 7px 7px 7px white;
+    /* transition: 0.5s; */
 }
 
+
 .questions{
-    background: url('ai_bot_2\ 1.gif') no-repeat center center/cover;
-    height: 100vh;
+    background: url('ai_bot_2\ 1.gif') no-repeat center center/cover; 
+    /* height: 100vh;  */
     border-radius: 34px;
+    color: white;
 }
+.faq{
+    margin: auto;
+    /* width: 100%; */
+    max-width: 700px; 
+}
+.faq li{
+    list-style: none;
+    width: 95%;
+    padding: 5px;
+    font-size: 19px;
+}
+.faq  li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.347);
+    backdrop-filter: blur(20px);
+    border-radius: 17px;
+}
+.faq  li label::after{
+    content: '+';
+    font-size: 33px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.6s;
+}
+input[type="radio"]
+{
+    display: none;
+}
+.faq .container1{
+    background-color: rgba(0, 0, 0, 0.347);
+    backdrop-filter: blur(10px);
+    border-radius: 17px;
+    text-align: left;
+    padding:0px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+
+}
+.faq input[type="radio"]:checked+label+.container1{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.faq input[type="radio"]:checked+label::after{
+    transform: rotate(137deg);
+}
+
 
 footer {
     background-color: black;
@@ -145,7 +245,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
 .footer-items {
     margin: 30px;
 }
@@ -160,7 +259,7 @@ footer img{
 }
 
 .gototop button {
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.109);
     margin: 15px;
     padding: 0px 20px;
     border-radius: 100%;
@@ -168,10 +267,11 @@ footer img{
     bottom: 15px;
     right: 15px;
     font-size: 3rem;
-    border: 2px solid black;
+    border: 2px solid white;
     outline: 3px solid green;
     outline-offset: -7px;
     transition: 0.2s;
+    color: white;
 }
 
 .gototop button:hover {
