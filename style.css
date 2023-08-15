@@ -165,7 +165,7 @@ h1{
     /* background: linear-gradient(132deg, #c3aa05, #b50eb5, #3f4dcd); */
     /* background-size: 400% 400%; */
     position: relative;
-    justify-content: center;
+    text-align: center;
 }
 .section-items {
     /* border: 2px solid white; */
