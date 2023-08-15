@@ -145,7 +145,7 @@ h1{
     border: 2px solid white;
     border-radius: 30px;
     animation: Gradient 3s ease infinite;
-    background-size: 400% 400%
+    background-size: 400% 400%;
     position: relative;
 }
 @keyframes Gradient {
