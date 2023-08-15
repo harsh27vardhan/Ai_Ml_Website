@@ -42,8 +42,24 @@
 .intro-section img{
     width: 150px;
 }
+.intro h1{
+    font-size: 1.2rem;
+}
+.intro p{
+    font-size: 1.5rem;
+}
 .section{
     flex-direction: column;
+}
+
+.teachers{
+    font-size: 16px;
+}
+.teachers h3{
+    font-size: 19px;
+}
+.teachers img{
+    width: 100px;
 }
 
 footer {
@@ -62,6 +78,12 @@ footer img{
 }
 .footer-items pre{
     font-size: 1rem;
+}
+.footer-items a{
+    color: darkblue;
+}
+#footerlogo{
+    width: 50px;
 }
 .copyright{
     font-size: 1rem;
