@@ -12,7 +12,7 @@
     <title>ALICE</title>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
     <div class="upper" id="home">
         <div class="navigation">
             <div class="logocontainer">
@@ -190,6 +190,9 @@ Uttarakhand 248197
             return false;
         }
         if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
             return false;
         }
         if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
